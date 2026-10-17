@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Handmade Diwali kandils made with love. Explore festive lantern designs and enquire to order on WhatsApp or Instagram.">
+<meta name="theme-color" content="#451b16">
+<title>Lavanya | Handmade Diwali Lights</title>
+<style>
+:root{--wine:#451b16;--red:#8f2e25;--gold:#e9b95d;--cream:#fff8ec;--pink:#f8e3d8;--ink:#34221e}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+a{color:inherit}.topbar{background:var(--wine);color:#fff2d6;text-align:center;padding:8px 14px;font-size:.88rem;letter-spacing:.04em}
+header{padding:18px 6%;display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid #ead8bf;background:#fffaf1}
+.logo{font-family:Georgia,serif;font-weight:bold;font-size:1.35rem;color:var(--wine);line-height:1.1}.logo small{display:block;font-family:Arial,sans-serif;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:#9a6a35;margin-top:6px}
+nav{display:flex;gap:24px;align-items:center}nav a{text-decoration:none;font-weight:700;font-size:.92rem}nav a:hover{color:var(--red)}
+.btn{display:inline-block;background:var(--wine);color:white;text-decoration:none;padding:13px 20px;border-radius:999px;font-weight:bold;border:2px solid var(--wine);transition:.2s}.btn:hover{background:var(--red);border-color:var(--red);transform:translateY(-1px)}.btn.light{background:transparent;color:var(--wine)}.btn.light:hover{background:#f3e4cf}
+.hero{padding:72px 6% 66px;display:grid;grid-template-columns:1.08fr .92fr;gap:45px;align-items:center;background:radial-gradient(circle at 85% 20%,#f5d9a0 0,transparent 28%),linear-gradient(135deg,#fff8ec,#f7e5d3)}
+.eyebrow{font-size:.78rem;text-transform:uppercase;letter-spacing:.2em;color:#9b5b30;font-weight:800}.hero h1{font-family:Georgia,serif;font-size:clamp(2.6rem,5.5vw,5rem);line-height:1.03;color:var(--wine);margin:15px 0 20px;letter-spacing:-.04em}.hero p{font-size:1.1rem;max-width:550px;color:#634941}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:27px}.note{font-size:.84rem;color:#8c6b5d;margin-top:16px}
+.hero-art{min-height:370px;display:grid;place-items:center;position:relative;overflow:hidden;border-radius:48% 48% 20px 20px;background:linear-gradient(160deg,#7a261e,#401610);box-shadow:0 18px 45px #5b231e2a}.hero-art:before,.hero-art:after{content:"";position:absolute;border:1px solid #f3cb77;inset:18px;border-radius:48% 48% 12px 12px;opacity:.55}.hero-art:after{inset:31px}
+.lantern{position:relative;width:190px;height:235px;filter:drop-shadow(0 0 24px #ffd36a99);z-index:1}.lantern .top{position:absolute;top:0;left:60px;width:70px;height:28px;background:#edc46e;clip-path:polygon(30% 0,70% 0,100% 100%,0 100%)}.lantern .body{position:absolute;top:26px;left:15px;width:160px;height:170px;background:repeating-linear-gradient(90deg,#e9b95d 0 5px,#9b3428 5px 20px,#f7d68a 20px 25px);clip-path:polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%);border:3px solid #f5d98d}.lantern .body:after{content:"✦";position:absolute;inset:0;display:grid;place-items:center;color:#fff3b2;font-size:4.8rem;text-shadow:0 0 16px #fff}.lantern .bottom{position:absolute;top:193px;left:58px;width:74px;height:22px;background:#edc46e;clip-path:polygon(0 0,100% 0,70% 100%,30% 100%)}.lantern .tassel{position:absolute;top:214px;left:92px;width:7px;height:32px;background:#e8b95d;border-radius:0 0 8px 8px}
+.spark{position:absolute;color:#f7d47f;font-size:1.5rem}.s1{top:17%;left:17%}.s2{top:24%;right:17%;font-size:2rem}.s3{bottom:19%;left:18%;font-size:1.1rem}.s4{bottom:18%;right:18%}
+.section{padding:76px 6%}.section-head{text-align:center;max-width:680px;margin:0 auto 38px}.section-head h2{font-family:Georgia,serif;color:var(--wine);font-size:clamp(2rem,4vw,3rem);line-height:1.1;margin:10px 0}.section-head p{color:#775b4f}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.product{background:white;border:1px solid #efdfca;border-radius:18px;overflow:hidden;box-shadow:0 7px 24px #54251a0a}.product-visual{height:210px;display:grid;place-items:center;position:relative;background:linear-gradient(135deg,#f9e6c5,#f5c9aa)}.product-visual:nth-child(1){background:#f8e4c4}.product-visual .mini{transform:scale(.62);filter:drop-shadow(0 5px 10px #7a2a1c33)}.product:nth-child(2) .product-visual{background:linear-gradient(135deg,#f7d5d1,#eeb2a4)}.product:nth-child(2) .lantern .body{background:repeating-linear-gradient(90deg,#f4c6bb 0 6px,#a32f40 6px 20px,#ffe4b5 20px 25px)}.product:nth-child(3) .product-visual{background:linear-gradient(135deg,#f8e7a8,#eac36b)}.product:nth-child(3) .lantern .body{background:repeating-linear-gradient(90deg,#f2d36f 0 6px,#24705b 6px 20px,#fff0b3 20px 25px)}.product-info{padding:20px}.product h3{margin:0 0 6px;color:var(--wine);font-family:Georgia,serif;font-size:1.3rem}.product p{margin:0;color:#775b4f;font-size:.94rem}.product .enquire{display:inline-block;margin-top:15px;color:#8f2e25;font-weight:bold;text-decoration:none}.product .enquire:hover{text-decoration:underline}
+.why{background:#f3e3d0}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.feature{padding:25px;background:#fff9f0;border-radius:16px;text-align:center}.feature .symbol{font-size:2rem}.feature h3{color:var(--wine);margin:8px 0}.feature p{margin:0;color:#775b4f;font-size:.94rem}
+.order{padding:70px 6%;background:var(--wine);color:#fff3df;text-align:center}.order h2{font-family:Georgia,serif;font-size:clamp(2rem,4vw,3rem);margin:0 0 12px}.order p{max-width:620px;margin:0 auto;color:#f1d9c2}.order .btn{margin-top:24px;background:var(--gold);border-color:var(--gold);color:var(--wine)}.order .btn:hover{background:#f6d58b}
+footer{padding:26px 6%;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;background:#32120f;color:#f7e3c9;font-size:.88rem}footer a{color:#f7d47f;text-decoration:none}.small{font-size:.8rem;opacity:.8}
+@media(max-width:760px){header{align-items:flex-start;flex-direction:column}nav{gap:15px;flex-wrap:wrap}.hero{grid-template-columns:1fr;padding-top:48px}.hero-art{min-height:300px}.products,.features{grid-template-columns:1fr}.product-visual{height:190px}.section{padding:55px 6%}}
+</style>
+</head>
+<body>
+<div class="topbar">✨ Handmade with love • Festive glow for your home ✨</div>
+<header>
+  <div class="logo">Lavanya<small>Handmade • Festive • Beautiful</small></div>
+  <nav aria-label="Main navigation"><a href="#collection">Collection</a><a href="#about">Our Story</a><a href="#order">How to Order</a></nav>
+</header>
+<main>
+<section class="hero">
+  <div>
+    <div class="eyebrow">A little handmade magic</div>
+    <h1>Light up your Diwali with something special.</h1>
+    <p>Bring home the warmth of handmade kandils—thoughtfully made to add colour, charm and a festive glow to your celebrations.</p>
+    <div class="actions"><a class="btn" href="#collection">Explore the collection</a><a class="btn light" href="#order">Enquire to order</a></div>
+    <div class="note">Each design has its own charm. Message us for current designs, sizes and prices.</div>
+  </div>
+  <div class="hero-art" role="img" aria-label="Decorative illustration of a glowing festive kandil">
+    <span class="spark s1">✦</span><span class="spark s2">✧</span><span class="spark s3">✦</span><span class="spark s4">✧</span>
+    <div class="lantern"><div class="top"></div><div class="body"></div><div class="bottom"></div><div class="tassel"></div></div>
+  </div>
+</section>
+<section class="section" id="collection">
+  <div class="section-head"><div class="eyebrow">Made for your celebrations</div><h2>Our Kandil Collection</h2><p>Browse a few style ideas below. Replace these illustrations with your actual product photos before sharing the site with customers.</p></div>
+  <div class="products">
+    <article class="product"><div class="product-visual"><div class="lantern mini"><div class="top"></div><div class="body"></div><div class="bottom"></div><div class="tassel"></div></div></div><div class="product-info"><h3>Traditional Glow</h3><p>A classic festive look for balconies, doorways and cosy corners.</p><a class="enquire" href="#order">Enquire about this style →</a></div></article>
+    <article class="product"><div class="product-visual"><div class="lantern mini"><div class="top"></div><div class="body"></div><div class="bottom"></div><div class="tassel"></div></div></div><div class="product-info"><h3>Festive Pink</h3><p>A cheerful pop of colour to brighten up your Diwali décor.</p><a class="enquire" href="#order">Enquire about this style →</a></div></article>
+    <article class="product"><div class="product-visual"><div class="lantern mini"><div class="top"></div><div class="body"></div><div class="bottom"></div><div class="tassel"></div></div></div><div class="product-info"><h3>Golden Green</h3><p>A vibrant combination inspired by the colours of the festive season.</p><a class="enquire" href="#order">Enquire about this style →</a></div></article>
+  </div>
+</section>
+<section class="section why" id="about">
+  <div class="section-head"><div class="eyebrow">The little details matter</div><h2>Made with care. Shared with joy.</h2><p>We believe festive décor should feel personal. Find a kandil that suits your home, your colours and your celebration.</p></div>
+  <div class="features">
+    <div class="feature"><div class="symbol">🪔</div><h3>Handmade charm</h3><p>Unique festive character with a warm, personal touch.</p></div>
+    <div class="feature"><div class="symbol">🎨</div><h3>Colourful designs</h3><p>Ask us about available colours, patterns and sizes.</p></div>
+    <div class="feature"><div class="symbol">💬</div><h3>Easy enquiries</h3><p>Contact us to check availability, pricing and delivery or pickup options.</p></div>
+  </div>
+</section>
+<section class="order" id="order">
+  <div class="eyebrow" style="color:#f3cb77">Ready to add a festive glow?</div>
+  <h2>Let's find your perfect kandil.</h2>
+  <p>Send us a message to see real product photos, confirm the price and place your order. We’ll help you choose a design for your home.</p>
+  <!-- Replace the WhatsApp number below with your full number including country code, digits only. -->
+  <a class="btn" href="https://instagram.com/lavanya_saaj_paramparecha" target="_blank" rel="noopener">Enquire on Instagram</a>
+  <p style="margin-top:14px;font-size:.9rem">You can also find us on Instagram: <a href="https://instagram.com/lavanya_saaj_paramparecha" style="color:#f3cb77"> @lavanya_saaj_paramparecha</a></p>
+</section>
+</main>
+<footer><div><strong>Lavanya</strong><div class="small">Handmade Diwali Kandils • Made with love</div></div><div>Questions or custom requests? <a href="#order">Get in touch</a></div><div class="small">© 2026 Lavanya</div></footer>
+</body>
+</html>
